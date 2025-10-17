@@ -1,0 +1,5 @@
+pygame==2.5.2
+numpy==1.26.0
+networkx==3.2.1
+scikit-fuzzy==0.4.2
+matplotlib==3.8.0
