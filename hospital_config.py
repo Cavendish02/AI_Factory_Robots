@@ -3,7 +3,7 @@ Hospital Configuration Module
 Defines the hospital map layout, colors, grid settings, and utility functions
 """
 
-# Hospital Map Layout - FULLY OPEN VERSION (All Paths Clear)
+# Factory Map Layout - FULLY OPEN VERSION (All Paths Clear)
 # Legend:
 # '#' = Wall
 # ' ' = Floor (walkable)
@@ -12,8 +12,7 @@ Defines the hospital map layout, colors, grid settings, and utility functions
 # 'D' = Destination (delivery point)
 
 # This map has NO internal obstacles to ensure all paths work!
-
-HOSPITAL_MAP = [
+FACTORY_MAP = [
     "###############",
     "#             #",
     "#         OOO #",
@@ -31,6 +30,10 @@ HOSPITAL_MAP = [
     "###############"
 ]
 
+
+
+# Keep backward compatibility
+HOSPITAL_MAP = FACTORY_MAP
 
 # Enhanced Color Palette
 COLORS = {
@@ -83,25 +86,25 @@ PATH_ANIMATION_DELAY = 4     # Delay between path animation frames
 # Robot Configuration
 ROBOT_CONFIGS = {
     'R1': {
-        'name': 'MediBot-1',
+        'name': 'CargoBot-1',
         'color': COLORS['robot_R1'],
         'initial_charge': 100,
         'speed': 1.0
     },
     'R2': {
-        'name': 'MediBot-2',
+        'name': 'CargoBot-2',
         'color': COLORS['robot_R2'],
         'initial_charge': 100,
         'speed': 1.0
     },
     'R3': {
-        'name': 'MediBot-3',
+        'name': 'CargoBot-3',
         'color': COLORS['robot_R3'],
         'initial_charge': 100,
         'speed': 1.0
     },
     'R4': {
-        'name': 'MediBot-4',
+        'name': 'CargoBot-4',
         'color': COLORS['robot_R4'],
         'initial_charge': 100,
         'speed': 1.0
@@ -110,20 +113,20 @@ ROBOT_CONFIGS = {
 
 # Task Types Configuration
 TASK_TYPES = {
-    'medicine': {
-        'name': 'Medicine Delivery',
+    'parts': {
+        'name': 'parts Delivery',
         'priority': 3,
-        'icon': '💊'
+        'icon': ' ⚙️'
     },
-    'equipment': {
-        'name': 'Equipment Transport',
+    'tools': {
+        'name': 'tools Transport',
         'priority': 2,
         'icon': '🔧'
     },
-    'samples': {
-        'name': 'Lab Samples',
+    'materials': {
+        'name': 'materials Delivery',
         'priority': 4,
-        'icon': '🧪'
+        'icon': '📦'
     },
     'documents': {
         'name': 'Document Delivery',

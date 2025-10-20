@@ -354,13 +354,11 @@ class Task:
     
     # Task type definitions
     TASK_TYPES = {
-        "medicine": {"name": "Medicine Delivery", "icon": "💊", "priority": 3},
-        "blood": {"name": "Blood Samples", "icon": "🩸", "priority": 4},
-        "supplies": {"name": "Medical Supplies", "icon": "📦", "priority": 2},
-        "equipment": {"name": "Medical Equipment", "icon": "🔧", "priority": 2},
-        "food": {"name": "Meal Delivery", "icon": "🍽️", "priority": 1},
+        "parts": {"name": "parts Delivery", "icon": "⚙️", "priority": 3},
+        "tools": {"name": "tools Transport", "icon": "🔧", "priority": 4},
+        "materials": {"name": "materials Delivery", "icon": "📦", "priority": 2},
+        "food": {"name": "Meal Delivery", "icon": "🍽️", "priority": 2},
         "documents": {"name": "Document Delivery", "icon": "📄", "priority": 1},
-        "lab_samples": {"name": "Lab Samples", "icon": "🧪", "priority": 4}
     }
     
     def __init__(self, task_id: str, source: Tuple[int, int], destination: Tuple[int, int],

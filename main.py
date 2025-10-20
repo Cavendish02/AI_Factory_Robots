@@ -108,7 +108,7 @@ class HospitalAISystem:
     """
     
     def __init__(self):
-        print("🏥 Initializing AI Hospital Management System...")
+        print("Initializing AI Factory Management System...")
         
         # Core components
         self.visualization = HospitalVisualization()
@@ -193,24 +193,24 @@ class HospitalAISystem:
                 'destination': (12, 13),  # Changed to valid position
                 'urgency': TaskUrgency.EMERGENCY, 
                 'weight': 3, 
-                'type': 'blood',
-                'description': 'Emergency blood samples from ICU to lab'
+                'type': 'parts',
+                'description': 'Emergency parts delivery to assembly line'
             },
             {
                 'source': (1, 13), 
                 'destination': (7, 7),  # Center position
                 'urgency': TaskUrgency.NORMAL, 
                 'weight': 8, 
-                'type': 'supplies',
-                'description': 'Medical supplies to center ward'
+                'type': 'materials',
+                'description': 'Raw materials to production area'
             },
             {
                 'source': (1, 13), 
                 'destination': (12, 3),  # Top right area
                 'urgency': TaskUrgency.URGENT, 
                 'weight': 2, 
-                'type': 'medicine', 
-                'description': 'Antiviral medication to isolation ward'
+                'type': 'tools', 
+                'description': 'Tools to maintenance station'
             },
             {
                 'source': (1, 13), 
@@ -218,7 +218,7 @@ class HospitalAISystem:
                 'urgency': TaskUrgency.NORMAL, 
                 'weight': 5, 
                 'type': 'equipment',
-                'description': 'Monitoring equipment to clinic'
+                'description': 'Equipment to quality control'
             },
             {
                 'source': (1, 13), 
@@ -226,7 +226,7 @@ class HospitalAISystem:
                 'urgency': TaskUrgency.URGENT, 
                 'weight': 1, 
                 'type': 'documents',
-                'description': 'Patient records to administration'
+                'description': 'Important records to administration'
             },
             {
                 'source': (1, 13), 
@@ -234,7 +234,7 @@ class HospitalAISystem:
                 'urgency': TaskUrgency.NORMAL, 
                 'weight': 4, 
                 'type': 'food',
-                'description': 'Meal delivery to patient rooms'
+                'description': 'Meal delivery to workers area'
             }
         ]
         
@@ -450,7 +450,7 @@ class HospitalAISystem:
     def print_final_report(self):
         """Print comprehensive final report"""
         print("\n" + "=" * 80)
-        print("🏥 AI HOSPITAL SYSTEM - FINAL PERFORMANCE REPORT")
+        print("AI FACTORY SYSTEM - FINAL PERFORMANCE REPORT")
         print("=" * 80)
         
         # Task summary
@@ -493,12 +493,12 @@ class HospitalAISystem:
             print("   ⭐ NEEDS IMPROVEMENT! System requires significant optimization!")
         
         print("\n" + "=" * 80)
-        print("Thank you for using the AI Hospital Management System!")
+        print("Thank you for using the AI Factory Management System!")
         print("=" * 80 + "\n")
     
     def run(self):
         """Main simulation loop"""
-        print("🚀 Starting AI Hospital Management System...")
+        print("🚀 Starting AI Factory Management System...")
         print("=" * 80)
         print("💡 Controls:")
         print("   SPACE - Assign next task")

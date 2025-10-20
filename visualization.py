@@ -25,7 +25,7 @@ class HospitalVisualization:
         self.panel_y = self.top_bar_height
         
         self.screen = pygame.display.set_mode((self.total_width, self.total_height))
-        pygame.display.set_caption("🏥 AI Hospital Robot Management System")
+        pygame.display.set_caption("AI Factory Robot Management System")
         self.clock = pygame.time.Clock()
         
         # Improved font system
@@ -621,3 +621,6 @@ class HospitalVisualization:
         pygame.display.flip()
         self.clock.tick(60)
         self.animation_frame += 1
+
+
+
